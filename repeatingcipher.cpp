@@ -1,4 +1,4 @@
-https://codeforces.com/problemset/problem/1095/A
+// https://codeforces.com/problemset/problem/1095/A
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -7,8 +7,8 @@ void solve(){
     cin>>n;
     string s;
     cin>>s;
-    string ans;
-    ans[0] = s[0];
+    string ans="";
+    ans += s[0];
     int i=1;
     while(i<n){
         ans+=s[i];
