@@ -9,13 +9,12 @@ void solve(){
         cin>>arr[i];
         sum+=arr[i];
     }
-    n%=sum;
     int i=0;
     while(n>0){
         n-=arr[i];
-        i++;
+        if(n>0)i = (i+1)%7;
     }
-    cout<<i<<endl;
+    cout<<i+1<<endl;
 }
 int main(){
    ios_base::sync_with_stdio(false);
